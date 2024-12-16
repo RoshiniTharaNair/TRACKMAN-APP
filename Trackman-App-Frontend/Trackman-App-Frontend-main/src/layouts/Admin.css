@@ -1,0 +1,64 @@
+/* Admin.scss */
+
+.canvas-container {
+  position: relative;
+  width: 90%; /* Adjust the width as needed */
+  height: 100%;
+  /* Add margin to the right */
+}
+
+.admin-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  padding-top: 60px; /* Adjust the value as needed to avoid overlap with AdminNavbar */
+}
+.outlet-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 95%; /* Adjust the width of the outlet container */
+  height: 100%;
+}
+
+.admin-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .admin-wrapper .main-content {
+    flex: 1;
+  }
+  
+  .admin-wrapper .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px); /* Adjust this value according to your footer height */
+  }
+  
+  .admin-wrapper .content-wrapper .content-container {
+    flex: 1;
+    padding-bottom: 60px; /* Set the padding-bottom to the height of the footer */
+  }
+  
+  .admin-wrapper .content-wrapper .routes-container {
+    padding: 20px;
+  }
+  
+  .admin-wrapper .admin-footer {
+    flex-shrink: 0;
+  }
+  
+  
